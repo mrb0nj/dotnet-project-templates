@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageId>MrB0nj.Console</PackageId>
+    <Title>MrB0nj's Console Application</Title>
+    <Description>Minimal console application configured as a hosted service including Serilog and dependency injection</Description>
+    <Authors>mrb0nj</Authors>
+    <PackageTags>dotnet-new;templates</PackageTags>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="mrb0nj.console\**\*" Exclude="mrb0nj.console\**\bin\**;mrb0nj.console\**\obj\**" />
+    <Compile Remove="**\*" />
+    </ItemGroup>
+</Project>

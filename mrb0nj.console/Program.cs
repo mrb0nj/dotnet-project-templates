@@ -2,4 +2,4 @@
 using MrB0nj.Console;
 
 Application.ConfigureLogging();
-Application.BuildAndRun<Service>(args);
+Application.BuildAndRun<MrB0njConsoleServiceName>(args);

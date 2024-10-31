@@ -3,11 +3,11 @@ using Microsoft.Extensions.Logging;
 
 namespace MrB0nj.Console;
 
-public class Service : BackgroundService
+public class MrB0njConsoleServiceName : BackgroundService
 {
-	private readonly ILogger<Service> _logger;
+	private readonly ILogger<MrB0njConsoleServiceName> _logger;
 
-	public Service(ILogger<Service> logger)
+	public MrB0njConsoleServiceName(ILogger<MrB0njConsoleServiceName> logger)
 	{
 		_logger = logger;
 	}
